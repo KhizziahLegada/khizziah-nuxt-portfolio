@@ -1,3 +1,4 @@
+
 <script setup>
 defineProps({
   label: String,
@@ -9,7 +10,11 @@ defineProps({
 </script>
 
 <template>
-  <button :class="`px-6 py-2 rounded-lg font-bold shadow-md hover:opacity-80 transition-opacity ${color}`">
+  <button
+    :class="`px-7 py-3 text-sm tracking-wide rounded-md
+    shadow-sm hover:-translate-y-1 hover:shadow-lg
+    transition-all duration-300 ${color}`"
+  >
     {{ label }}
   </button>
 </template>
